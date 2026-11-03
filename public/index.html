@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Notes Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>Quick Notes</h1>
+        <p>Capture your thoughts. Organize your day.</p>
+    </header>
+
+    <main class="container">
+
+        <section class="form-section">
+            <h2>Create a New Note</h2>
+
+            <form id="noteForm">
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="Enter note title"
+                    required
+                >
+
+                <textarea
+                    id="content"
+                    placeholder="Write your note here..."
+                    required
+                ></textarea>
+
+                <button type="submit">+ Add Note</button>
+            </form>
+        </section>
+
+        <section class="notes-section">
+            <h2>My Notes</h2>
+
+            <div id="notesContainer" class="notes-container">
+                Loading notes...
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        Quick Notes Application | Built with Node.js and Express
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
